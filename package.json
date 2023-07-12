@@ -1,12 +1,12 @@
 {
   "name": "@vivekdebugs/hello-world-package",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "",
   "publishConfig": {
     "@vivekdebugs:registry": "https://npm.pkg.github.com"
   },
   "files": [
-    "build"
+    "./build"
   ],
   "main": "index.js",
   "scripts": {
