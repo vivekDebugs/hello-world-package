@@ -1,17 +1,21 @@
 {
   "name": "@vivekdebugs/hello-world-package",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "",
   "publishConfig": {
     "@vivekdebugs:registry": "https://npm.pkg.github.com"
   },
   "files": [
-    "index.js"
+    "build/*"
   ],
   "main": "index.js",
   "scripts": {
-    "test": "exit 0"
+    "test": "exit 0",
+    "build": "rm -rf build && copyfiles index.js build/"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "copyfiles": "^2.4.1"
+  }
 }
